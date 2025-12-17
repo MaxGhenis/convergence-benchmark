@@ -1,17 +1,17 @@
 {
   "outcome": "win",
   "rounds": 1,
-  "converged_word": "shield",
-  "player1_model": "anthropic/claude-3-5-haiku-latest",
-  "player2_model": "anthropic/claude-3-5-haiku-latest",
+  "converged_word": "mail",
+  "player1_model": "anthropic/claude-haiku-4-5",
+  "player2_model": "anthropic/claude-haiku-4-5",
   "player1_words": [
-    "shield"
+    "mail"
   ],
   "player2_words": [
-    "shield"
+    "mail"
   ],
-  "seed_word1": "victory",
-  "seed_word2": "safety",
+  "seed_word1": "letter",
+  "seed_word2": "island",
   "game_number": 1,
-  "timestamp": "2025-12-17T08:20:29.887038+00:00"
+  "timestamp": "2025-12-17T08:28:31.938665+00:00"
 }
