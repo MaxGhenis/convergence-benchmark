@@ -26,68 +26,43 @@ async def main() -> None:
     output_dir = Path("data/results/claude_4_5_suite")
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # Generate fixed seed pairs for all games
-    # Same-model: 3 models × 10 games = 30 pairs
-    # Cross-model: 3 pairs × 10 games = 30 pairs
-    # Total: 60 pairs
-    total_games = len(MODELS) * NUM_GAMES + 3 * NUM_GAMES  # same + cross
-    seed_pairs = generate_seed_pairs(total_games, seed=RANDOM_SEED)
+    # Generate fixed seed pairs - SAME pairs used for ALL model combinations
+    seed_pairs = generate_seed_pairs(NUM_GAMES, seed=RANDOM_SEED)
 
     print(f"Generated {len(seed_pairs)} seed pairs with seed={RANDOM_SEED}")
+    print("Same pairs used for all 6 model combinations!")
+    print(f"Pairs: {seed_pairs}")
     print(f"Models: {MODELS}")
-    print(f"Games per pair: {NUM_GAMES}")
     print("=" * 60)
 
     all_results = []
-    pair_idx = 0
 
-    # Same-model games
-    print("\n=== SAME-MODEL GAMES ===")
-    for model in MODELS:
-        print(f"\n--- {model} vs {model} ---")
-        pairs = seed_pairs[pair_idx : pair_idx + NUM_GAMES]
-        pair_idx += NUM_GAMES
-
-        results = await run_benchmark(
-            model1=model,
-            model2=model,
-            num_games=NUM_GAMES,
-            max_rounds=MAX_ROUNDS,
-            seed_pairs=pairs,
-            verbose=True,
-        )
-
-        for r in results:
-            r["benchmark_type"] = "same_model"
-        all_results.extend(results)
-
-        summary = summarize_results(results)
-        print(f"\nSummary: {json.dumps(summary, indent=2)}")
-
-    # Cross-model games
-    print("\n=== CROSS-MODEL GAMES ===")
-    cross_pairs = [
+    # All model pair combinations (same + cross)
+    model_pairs = [
+        (MODELS[0], MODELS[0]),  # haiku vs haiku
+        (MODELS[1], MODELS[1]),  # sonnet vs sonnet
+        (MODELS[2], MODELS[2]),  # opus vs opus
         (MODELS[0], MODELS[1]),  # haiku vs sonnet
         (MODELS[0], MODELS[2]),  # haiku vs opus
         (MODELS[1], MODELS[2]),  # sonnet vs opus
     ]
 
-    for model1, model2 in cross_pairs:
+    for model1, model2 in model_pairs:
+        is_same = model1 == model2
+        benchmark_type = "same_model" if is_same else "cross_model"
         print(f"\n--- {model1} vs {model2} ---")
-        pairs = seed_pairs[pair_idx : pair_idx + NUM_GAMES]
-        pair_idx += NUM_GAMES
 
         results = await run_benchmark(
             model1=model1,
             model2=model2,
             num_games=NUM_GAMES,
             max_rounds=MAX_ROUNDS,
-            seed_pairs=pairs,
+            seed_pairs=seed_pairs,  # Same pairs for all!
             verbose=True,
         )
 
         for r in results:
-            r["benchmark_type"] = "cross_model"
+            r["benchmark_type"] = benchmark_type
         all_results.extend(results)
 
         summary = summarize_results(results)

@@ -1,0 +1,1255 @@
+{
+  "metadata": {
+    "models": [
+      "anthropic/claude-haiku-4-5",
+      "anthropic/claude-sonnet-4-5",
+      "anthropic/claude-opus-4-5"
+    ],
+    "num_games_per_pair": 10,
+    "max_rounds": 20,
+    "random_seed": 42,
+    "timestamp": "20251217_084349"
+  },
+  "results": [
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "water",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "water"
+      ],
+      "player2_words": [
+        "water"
+      ],
+      "seed_word1": "storm",
+      "seed_word2": "lake",
+      "game_number": 1,
+      "timestamp": "2025-12-17T08:37:40.619929+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "peak",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "peak"
+      ],
+      "player2_words": [
+        "peak"
+      ],
+      "seed_word1": "sister",
+      "seed_word2": "top",
+      "game_number": 2,
+      "timestamp": "2025-12-17T08:37:41.886156+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "display",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "display"
+      ],
+      "player2_words": [
+        "display"
+      ],
+      "seed_word1": "window",
+      "seed_word2": "stuff",
+      "game_number": 3,
+      "timestamp": "2025-12-17T08:37:43.522608+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "mill",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "mill"
+      ],
+      "player2_words": [
+        "mill"
+      ],
+      "seed_word1": "arm",
+      "seed_word2": "wind",
+      "game_number": 4,
+      "timestamp": "2025-12-17T08:37:44.705356+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 3,
+      "converged_word": "beam",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "tree",
+        "path",
+        "beam"
+      ],
+      "player2_words": [
+        "clearing",
+        "light",
+        "beam"
+      ],
+      "seed_word1": "center",
+      "seed_word2": "forest",
+      "game_number": 5,
+      "timestamp": "2025-12-17T08:37:48.636066+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "peak",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "peak"
+      ],
+      "player2_words": [
+        "peak"
+      ],
+      "seed_word1": "risk",
+      "seed_word2": "top",
+      "game_number": 6,
+      "timestamp": "2025-12-17T08:37:49.848207+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 3,
+      "converged_word": "negotiate",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "price",
+        "bargain",
+        "negotiate"
+      ],
+      "player2_words": [
+        "clever",
+        "deal",
+        "negotiate"
+      ],
+      "seed_word1": "cost",
+      "seed_word2": "fox",
+      "game_number": 7,
+      "timestamp": "2025-12-17T08:37:53.481223+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 4,
+      "converged_word": "sky",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "astronaut",
+        "universe",
+        "night",
+        "sky"
+      ],
+      "player2_words": [
+        "astro",
+        "moon",
+        "stars",
+        "sky"
+      ],
+      "seed_word1": "skill",
+      "seed_word2": "space",
+      "game_number": 8,
+      "timestamp": "2025-12-17T08:37:58.524977+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "school",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "school"
+      ],
+      "player2_words": [
+        "school"
+      ],
+      "seed_word1": "worker",
+      "seed_word2": "student",
+      "game_number": 9,
+      "timestamp": "2025-12-17T08:38:00.200242+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "branch",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "branch"
+      ],
+      "player2_words": [
+        "branch"
+      ],
+      "seed_word1": "tree",
+      "seed_word2": "hair",
+      "game_number": 10,
+      "timestamp": "2025-12-17T08:38:01.388956+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "water",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "water"
+      ],
+      "player2_words": [
+        "water"
+      ],
+      "seed_word1": "storm",
+      "seed_word2": "lake",
+      "game_number": 1,
+      "timestamp": "2025-12-17T08:38:04.659546+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "bunk",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "bunk"
+      ],
+      "player2_words": [
+        "bunk"
+      ],
+      "seed_word1": "sister",
+      "seed_word2": "top",
+      "game_number": 2,
+      "timestamp": "2025-12-17T08:38:07.556106+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "display",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "display"
+      ],
+      "player2_words": [
+        "display"
+      ],
+      "seed_word1": "window",
+      "seed_word2": "stuff",
+      "game_number": 3,
+      "timestamp": "2025-12-17T08:38:13.412332+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "mill",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "mill"
+      ],
+      "player2_words": [
+        "mill"
+      ],
+      "seed_word1": "arm",
+      "seed_word2": "wind",
+      "game_number": 4,
+      "timestamp": "2025-12-17T08:38:17.141303+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "heart",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "heart"
+      ],
+      "player2_words": [
+        "heart"
+      ],
+      "seed_word1": "center",
+      "seed_word2": "forest",
+      "game_number": 5,
+      "timestamp": "2025-12-17T08:38:20.405478+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "mountain",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "mountain"
+      ],
+      "player2_words": [
+        "mountain"
+      ],
+      "seed_word1": "risk",
+      "seed_word2": "top",
+      "game_number": 6,
+      "timestamp": "2025-12-17T08:38:22.736051+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "hunt",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "hunt"
+      ],
+      "player2_words": [
+        "hunt"
+      ],
+      "seed_word1": "cost",
+      "seed_word2": "fox",
+      "game_number": 7,
+      "timestamp": "2025-12-17T08:38:25.251220+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "craft",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "craft"
+      ],
+      "player2_words": [
+        "craft"
+      ],
+      "seed_word1": "skill",
+      "seed_word2": "space",
+      "game_number": 8,
+      "timestamp": "2025-12-17T08:38:27.873480+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "learner",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "learner"
+      ],
+      "player2_words": [
+        "learner"
+      ],
+      "seed_word1": "worker",
+      "seed_word2": "student",
+      "game_number": 9,
+      "timestamp": "2025-12-17T08:38:30.523494+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "growth",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "growth"
+      ],
+      "player2_words": [
+        "growth"
+      ],
+      "seed_word1": "tree",
+      "seed_word2": "hair",
+      "game_number": 10,
+      "timestamp": "2025-12-17T08:38:32.935152+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "water",
+      "player1_model": "anthropic/claude-opus-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "water"
+      ],
+      "player2_words": [
+        "water"
+      ],
+      "seed_word1": "storm",
+      "seed_word2": "lake",
+      "game_number": 1,
+      "timestamp": "2025-12-17T08:38:35.848010+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "brother",
+      "player1_model": "anthropic/claude-opus-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "brother"
+      ],
+      "player2_words": [
+        "brother"
+      ],
+      "seed_word1": "sister",
+      "seed_word2": "top",
+      "game_number": 2,
+      "timestamp": "2025-12-17T08:38:39.144330+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "store",
+      "player1_model": "anthropic/claude-opus-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "shop",
+        "store"
+      ],
+      "player2_words": [
+        "glass",
+        "store"
+      ],
+      "seed_word1": "window",
+      "seed_word2": "stuff",
+      "game_number": 3,
+      "timestamp": "2025-12-17T08:38:44.472204+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "strong",
+      "player1_model": "anthropic/claude-opus-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "strong"
+      ],
+      "player2_words": [
+        "strong"
+      ],
+      "seed_word1": "arm",
+      "seed_word2": "wind",
+      "game_number": 4,
+      "timestamp": "2025-12-17T08:38:46.946379+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "tree",
+      "player1_model": "anthropic/claude-opus-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "tree"
+      ],
+      "player2_words": [
+        "tree"
+      ],
+      "seed_word1": "center",
+      "seed_word2": "forest",
+      "game_number": 5,
+      "timestamp": "2025-12-17T08:38:49.521319+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "peak",
+      "player1_model": "anthropic/claude-opus-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "mountain",
+        "peak"
+      ],
+      "player2_words": [
+        "high",
+        "peak"
+      ],
+      "seed_word1": "risk",
+      "seed_word2": "top",
+      "game_number": 6,
+      "timestamp": "2025-12-17T08:38:56.629456+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "hunt",
+      "player1_model": "anthropic/claude-opus-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "hunt"
+      ],
+      "player2_words": [
+        "hunt"
+      ],
+      "seed_word1": "cost",
+      "seed_word2": "fox",
+      "game_number": 7,
+      "timestamp": "2025-12-17T08:39:00.308911+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 3,
+      "converged_word": "military",
+      "player1_model": "anthropic/claude-opus-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "game",
+        "mission",
+        "military"
+      ],
+      "player2_words": [
+        "astronaut",
+        "training",
+        "military"
+      ],
+      "seed_word1": "skill",
+      "seed_word2": "space",
+      "game_number": 8,
+      "timestamp": "2025-12-17T08:39:10.347736+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "trainee",
+      "player1_model": "anthropic/claude-opus-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "learner",
+        "trainee"
+      ],
+      "player2_words": [
+        "employee",
+        "trainee"
+      ],
+      "seed_word1": "worker",
+      "seed_word2": "student",
+      "game_number": 9,
+      "timestamp": "2025-12-17T08:39:17.860348+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "branch",
+      "player1_model": "anthropic/claude-opus-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "branch"
+      ],
+      "player2_words": [
+        "branch"
+      ],
+      "seed_word1": "tree",
+      "seed_word2": "hair",
+      "game_number": 10,
+      "timestamp": "2025-12-17T08:39:20.532018+00:00",
+      "benchmark_type": "same_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "water",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "water"
+      ],
+      "player2_words": [
+        "water"
+      ],
+      "seed_word1": "storm",
+      "seed_word2": "lake",
+      "game_number": 1,
+      "timestamp": "2025-12-17T08:39:23.436691+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "repetition",
+      "rounds": 6,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "peak",
+        "mountain",
+        "range",
+        "stone",
+        "link",
+        "chain"
+      ],
+      "player2_words": [
+        "bunk",
+        "bed",
+        "rock",
+        "chain",
+        "wall",
+        "fence"
+      ],
+      "seed_word1": "sister",
+      "seed_word2": "top",
+      "game_number": 2,
+      "timestamp": "2025-12-17T08:39:39.216807+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "cabinet",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "shelf",
+        "cabinet"
+      ],
+      "player2_words": [
+        "glass",
+        "cabinet"
+      ],
+      "seed_word1": "window",
+      "seed_word2": "stuff",
+      "game_number": 3,
+      "timestamp": "2025-12-17T08:39:44.960225+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 3,
+      "converged_word": "flour",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "breeze",
+        "grain",
+        "flour"
+      ],
+      "player2_words": [
+        "mill",
+        "windmill",
+        "flour"
+      ],
+      "seed_word1": "arm",
+      "seed_word2": "wind",
+      "game_number": 4,
+      "timestamp": "2025-12-17T08:39:52.482143+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "journey",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "path",
+        "journey"
+      ],
+      "player2_words": [
+        "heart",
+        "journey"
+      ],
+      "seed_word1": "center",
+      "seed_word2": "forest",
+      "game_number": 5,
+      "timestamp": "2025-12-17T08:39:57.804801+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "summit",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "peak",
+        "summit"
+      ],
+      "player2_words": [
+        "mountain",
+        "summit"
+      ],
+      "seed_word1": "risk",
+      "seed_word2": "top",
+      "game_number": 6,
+      "timestamp": "2025-12-17T08:40:03.836360+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 6,
+      "converged_word": "drive",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "cunning",
+        "prey",
+        "survival",
+        "hunger",
+        "instinct",
+        "drive"
+      ],
+      "player2_words": [
+        "hunt",
+        "predator",
+        "food",
+        "necessity",
+        "need",
+        "drive"
+      ],
+      "seed_word1": "cost",
+      "seed_word2": "fox",
+      "game_number": 7,
+      "timestamp": "2025-12-17T08:40:21.636849+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 5,
+      "converged_word": "aim",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "astronaut",
+        "spacecraft",
+        "objective",
+        "goal",
+        "aim"
+      ],
+      "player2_words": [
+        "craft",
+        "mission",
+        "launch",
+        "target",
+        "aim"
+      ],
+      "seed_word1": "skill",
+      "seed_word2": "space",
+      "game_number": 8,
+      "timestamp": "2025-12-17T08:40:33.794516+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "learning",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "learning"
+      ],
+      "player2_words": [
+        "learning"
+      ],
+      "seed_word1": "worker",
+      "seed_word2": "student",
+      "game_number": 9,
+      "timestamp": "2025-12-17T08:40:36.011093+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "trunk",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-sonnet-4-5",
+      "player1_words": [
+        "branch",
+        "trunk"
+      ],
+      "player2_words": [
+        "root",
+        "trunk"
+      ],
+      "seed_word1": "tree",
+      "seed_word2": "hair",
+      "game_number": 10,
+      "timestamp": "2025-12-17T08:40:40.836347+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "water",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "water"
+      ],
+      "player2_words": [
+        "water"
+      ],
+      "seed_word1": "storm",
+      "seed_word2": "lake",
+      "game_number": 1,
+      "timestamp": "2025-12-17T08:40:43.493922+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "mountain",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "peak",
+        "mountain"
+      ],
+      "player2_words": [
+        "brother",
+        "mountain"
+      ],
+      "seed_word1": "sister",
+      "seed_word2": "top",
+      "game_number": 2,
+      "timestamp": "2025-12-17T08:40:48.866323+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 7,
+      "converged_word": "communication",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "display",
+        "showcase",
+        "monitor",
+        "broadcast",
+        "signal",
+        "message",
+        "communication"
+      ],
+      "player2_words": [
+        "glass",
+        "screen",
+        "television",
+        "computer",
+        "media",
+        "transmission",
+        "communication"
+      ],
+      "seed_word1": "window",
+      "seed_word2": "stuff",
+      "game_number": 3,
+      "timestamp": "2025-12-17T08:41:08.668730+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "gust",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "breeze",
+        "gust"
+      ],
+      "player2_words": [
+        "strong",
+        "gust"
+      ],
+      "seed_word1": "arm",
+      "seed_word2": "wind",
+      "game_number": 4,
+      "timestamp": "2025-12-17T08:41:13.988497+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 4,
+      "converged_word": "military",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "heart",
+        "root",
+        "branch",
+        "military"
+      ],
+      "player2_words": [
+        "tree",
+        "trunk",
+        "base",
+        "military"
+      ],
+      "seed_word1": "center",
+      "seed_word2": "forest",
+      "game_number": 5,
+      "timestamp": "2025-12-17T08:41:27.423867+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "mountain",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "peak",
+        "mountain"
+      ],
+      "player2_words": [
+        "high",
+        "mountain"
+      ],
+      "seed_word1": "risk",
+      "seed_word2": "top",
+      "game_number": 6,
+      "timestamp": "2025-12-17T08:41:34.903188+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 6,
+      "converged_word": "night",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "sly",
+        "stealthy",
+        "hunter",
+        "shadow",
+        "silence",
+        "night"
+      ],
+      "player2_words": [
+        "hunt",
+        "predator",
+        "ninja",
+        "assassin",
+        "dark",
+        "night"
+      ],
+      "seed_word1": "cost",
+      "seed_word2": "fox",
+      "game_number": 7,
+      "timestamp": "2025-12-17T08:41:54.929788+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 4,
+      "converged_word": "system",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "astronaut",
+        "simulation",
+        "universe",
+        "system"
+      ],
+      "player2_words": [
+        "game",
+        "star",
+        "computer",
+        "system"
+      ],
+      "seed_word1": "skill",
+      "seed_word2": "space",
+      "game_number": 8,
+      "timestamp": "2025-12-17T08:42:06.353023+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "learning",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "learning"
+      ],
+      "player2_words": [
+        "learning"
+      ],
+      "seed_word1": "worker",
+      "seed_word2": "student",
+      "game_number": 9,
+      "timestamp": "2025-12-17T08:42:09.039829+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 7,
+      "converged_word": "banana",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "roots",
+        "trunk",
+        "growth",
+        "sprout",
+        "division",
+        "fruit",
+        "banana"
+      ],
+      "player2_words": [
+        "branch",
+        "plant",
+        "stem",
+        "cell",
+        "seed",
+        "split",
+        "banana"
+      ],
+      "seed_word1": "tree",
+      "seed_word2": "hair",
+      "game_number": 10,
+      "timestamp": "2025-12-17T08:42:29.345209+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "water",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "water"
+      ],
+      "player2_words": [
+        "water"
+      ],
+      "seed_word1": "storm",
+      "seed_word2": "lake",
+      "game_number": 1,
+      "timestamp": "2025-12-17T08:42:32.133503+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "bed",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "bunk",
+        "bed"
+      ],
+      "player2_words": [
+        "brother",
+        "bed"
+      ],
+      "seed_word1": "sister",
+      "seed_word2": "top",
+      "game_number": 2,
+      "timestamp": "2025-12-17T08:42:39.119493+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "store",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "shop",
+        "store"
+      ],
+      "player2_words": [
+        "glass",
+        "store"
+      ],
+      "seed_word1": "window",
+      "seed_word2": "stuff",
+      "game_number": 3,
+      "timestamp": "2025-12-17T08:42:45.105363+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "steel",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "mill",
+        "steel"
+      ],
+      "player2_words": [
+        "strong",
+        "steel"
+      ],
+      "seed_word1": "arm",
+      "seed_word2": "wind",
+      "game_number": 4,
+      "timestamp": "2025-12-17T08:42:50.619489+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 4,
+      "converged_word": "floor",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "heart",
+        "root",
+        "wood",
+        "floor"
+      ],
+      "player2_words": [
+        "tree",
+        "oak",
+        "ground",
+        "floor"
+      ],
+      "seed_word1": "center",
+      "seed_word2": "forest",
+      "game_number": 5,
+      "timestamp": "2025-12-17T08:43:04.449562+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "summit",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "mountain",
+        "summit"
+      ],
+      "player2_words": [
+        "peak",
+        "summit"
+      ],
+      "seed_word1": "risk",
+      "seed_word2": "top",
+      "game_number": 6,
+      "timestamp": "2025-12-17T08:43:11.278712+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "hunt",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "hunt"
+      ],
+      "player2_words": [
+        "hunt"
+      ],
+      "seed_word1": "cost",
+      "seed_word2": "fox",
+      "game_number": 7,
+      "timestamp": "2025-12-17T08:43:16.078068+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 5,
+      "converged_word": "plan",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "craft",
+        "board",
+        "theater",
+        "strategy",
+        "plan"
+      ],
+      "player2_words": [
+        "game",
+        "play",
+        "chess",
+        "stage",
+        "plan"
+      ],
+      "seed_word1": "skill",
+      "seed_word2": "space",
+      "game_number": 8,
+      "timestamp": "2025-12-17T08:43:31.127232+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 3,
+      "converged_word": "career",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "person",
+        "job",
+        "career"
+      ],
+      "player2_words": [
+        "employee",
+        "individual",
+        "career"
+      ],
+      "seed_word1": "worker",
+      "seed_word2": "student",
+      "game_number": 9,
+      "timestamp": "2025-12-17T08:43:40.746734+00:00",
+      "benchmark_type": "cross_model"
+    },
+    {
+      "outcome": "win",
+      "rounds": 3,
+      "converged_word": "green",
+      "player1_model": "anthropic/claude-sonnet-4-5",
+      "player2_model": "anthropic/claude-opus-4-5",
+      "player1_words": [
+        "growth",
+        "leaf",
+        "green"
+      ],
+      "player2_words": [
+        "branch",
+        "plant",
+        "green"
+      ],
+      "seed_word1": "tree",
+      "seed_word2": "hair",
+      "game_number": 10,
+      "timestamp": "2025-12-17T08:43:49.766815+00:00",
+      "benchmark_type": "cross_model"
+    }
+  ],
+  "summary": {
+    "total_games": 60,
+    "overall": {
+      "total_games": 60,
+      "wins": 59,
+      "win_rate": 0.9833333333333333,
+      "non_convergence": 0,
+      "repetitions": 1,
+      "invalid_words": 0,
+      "avg_rounds_to_win": 2.152542372881356,
+      "min_rounds_to_win": 1,
+      "max_rounds_to_win": 7
+    }
+  }
+}
