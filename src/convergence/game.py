@@ -22,11 +22,15 @@ class GameState:
         round: Current round number (0-indexed before first move).
         player1_words: Words chosen by player 1.
         player2_words: Words chosen by player 2.
+        seed_word1: Starting word assigned to player 1.
+        seed_word2: Starting word assigned to player 2.
     """
 
     round: int = 0
     player1_words: tuple[str, ...] = field(default_factory=tuple)
     player2_words: tuple[str, ...] = field(default_factory=tuple)
+    seed_word1: str | None = None
+    seed_word2: str | None = None
 
     def add_round(self, word1: str, word2: str) -> "GameState":
         """Add a round with words from both players.
@@ -42,6 +46,8 @@ class GameState:
             round=self.round + 1,
             player1_words=(*self.player1_words, word1.lower().strip()),
             player2_words=(*self.player2_words, word2.lower().strip()),
+            seed_word1=self.seed_word1,
+            seed_word2=self.seed_word2,
         )
 
     @property
@@ -60,8 +66,13 @@ class GameState:
 
     @property
     def all_words(self) -> set[str]:
-        """Get all words used by both players."""
-        return set(self.player1_words) | set(self.player2_words)
+        """Get all words used by both players, including seed words."""
+        words = set(self.player1_words) | set(self.player2_words)
+        if self.seed_word1:
+            words.add(self.seed_word1)
+        if self.seed_word2:
+            words.add(self.seed_word2)
+        return words
 
 
 @dataclass
@@ -86,7 +97,7 @@ class GameResult:
 
     def to_dict(self) -> dict[str, Any]:
         """Serialize result to dictionary for JSON export."""
-        return {
+        result = {
             "outcome": self.outcome.value,
             "rounds": self.rounds,
             "converged_word": self.converged_word,
@@ -95,6 +106,11 @@ class GameResult:
             "player1_words": list(self.state.player1_words),
             "player2_words": list(self.state.player2_words),
         }
+        if self.state.seed_word1:
+            result["seed_word1"] = self.state.seed_word1
+        if self.state.seed_word2:
+            result["seed_word2"] = self.state.seed_word2
+        return result
 
 
 @dataclass

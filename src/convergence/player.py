@@ -71,6 +71,21 @@ class Player:
             User prompt string.
         """
         if state.round == 0:
+            # If seed words are set, use them as the starting point
+            if state.seed_word1 and state.seed_word2:
+                lines = [
+                    "Round 1:",
+                    f"Your starting word: {state.seed_word1}",
+                    f"Opponent's starting word: {state.seed_word2}",
+                    "",
+                    f"Think of a word that connects '{state.seed_word1}' "
+                    f"and '{state.seed_word2}'.",
+                    "",
+                    f"Words you cannot use: {state.seed_word1}, {state.seed_word2}",
+                    "",
+                    "Respond with ONLY a single word.",
+                ]
+                return "\n".join(lines)
             return "Start the game by saying any word. Respond with ONLY a single word."
 
         # Get the opponent's last word and our last word

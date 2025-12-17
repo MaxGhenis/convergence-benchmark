@@ -44,8 +44,8 @@ class TestPlayer:
         player = Player(model="gemini/gemini-2.5-flash")
         assert player.model == "gemini/gemini-2.5-flash"
 
-    def test_build_prompt_first_round(self) -> None:
-        """First round prompt should ask for a starting word."""
+    def test_build_prompt_first_round_no_seeds(self) -> None:
+        """First round prompt without seeds should ask for a starting word."""
         player = Player(model="gemini/gemini-2.5-flash")
         state = GameState()
 
@@ -53,6 +53,18 @@ class TestPlayer:
         # First round just asks for any word (game rules are in system prompt)
         assert "word" in prompt.lower()
         assert "single" in prompt.lower() or "only" in prompt.lower()
+
+    def test_build_prompt_first_round_with_seeds(self) -> None:
+        """First round prompt with seeds should show both seed words."""
+        player = Player(model="gemini/gemini-2.5-flash")
+        state = GameState(seed_word1="cat", seed_word2="dog")
+
+        prompt = player.build_prompt(state, is_player1=True)
+        # Should show the seed words
+        assert "cat" in prompt.lower()
+        assert "dog" in prompt.lower()
+        # Should ask for a connecting word
+        assert "connect" in prompt.lower() or "bridge" in prompt.lower()
 
     def test_build_prompt_subsequent_round(self) -> None:
         """Subsequent rounds should include history."""

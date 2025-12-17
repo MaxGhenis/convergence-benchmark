@@ -9,6 +9,7 @@ from typing import Any
 
 from convergence.game import GameResult, GameState, Outcome
 from convergence.player import Player
+from convergence.wordlist import get_seed_words
 
 
 @dataclass
@@ -27,13 +28,19 @@ class GameRunner:
     max_rounds: int = 20
     verbose: bool = False
 
-    async def play_game(self) -> GameResult:
+    async def play_game(
+        self, seed_word1: str | None = None, seed_word2: str | None = None
+    ) -> GameResult:
         """Play a single game between the two players.
+
+        Args:
+            seed_word1: Optional starting word for player 1.
+            seed_word2: Optional starting word for player 2.
 
         Returns:
             GameResult with the outcome and full history.
         """
-        state = GameState()
+        state = GameState(seed_word1=seed_word1, seed_word2=seed_word2)
 
         for round_num in range(self.max_rounds):
             # Get words from both players concurrently
@@ -103,6 +110,7 @@ async def run_benchmark(
     max_rounds: int = 20,
     output_dir: Path | None = None,
     verbose: bool = False,
+    use_seed_words: bool = True,
 ) -> list[dict[str, Any]]:
     """Run a benchmark of multiple games between two models.
 
@@ -113,6 +121,7 @@ async def run_benchmark(
         max_rounds: Maximum rounds per game.
         output_dir: Directory to save results (optional).
         verbose: Whether to print progress.
+        use_seed_words: Whether to assign random seed words (default True).
 
     Returns:
         List of game results as dictionaries.
@@ -124,10 +133,18 @@ async def run_benchmark(
     results: list[dict[str, Any]] = []
 
     for i in range(num_games):
+        # Generate seed words for fair benchmarking
+        if use_seed_words:
+            seed_word1, seed_word2 = get_seed_words()
+        else:
+            seed_word1, seed_word2 = None, None
+
         if verbose:
             print(f"\n=== Game {i + 1}/{num_games} ===")
+            if seed_word1 and seed_word2:
+                print(f"Seed words: '{seed_word1}' vs '{seed_word2}'")
 
-        result = await runner.play_game()
+        result = await runner.play_game(seed_word1, seed_word2)
         result_dict = result.to_dict()
         result_dict["game_number"] = i + 1
         result_dict["timestamp"] = datetime.now(UTC).isoformat()

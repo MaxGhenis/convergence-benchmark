@@ -1,0 +1,57 @@
+[
+  {
+    "outcome": "win",
+    "rounds": 2,
+    "converged_word": "smile",
+    "player1_model": "claude-3-haiku-20240307",
+    "player2_model": "claude-3-haiku-20240307",
+    "player1_words": [
+      "lip",
+      "smile"
+    ],
+    "player2_words": [
+      "teeth",
+      "smile"
+    ],
+    "seed_word1": "edge",
+    "seed_word2": "mouth",
+    "game_number": 1,
+    "timestamp": "2025-12-17T08:07:29.607003+00:00"
+  },
+  {
+    "outcome": "win",
+    "rounds": 1,
+    "converged_word": "sour",
+    "player1_model": "claude-3-haiku-20240307",
+    "player2_model": "claude-3-haiku-20240307",
+    "player1_words": [
+      "sour"
+    ],
+    "player2_words": [
+      "sour"
+    ],
+    "seed_word1": "problem",
+    "seed_word2": "lemon",
+    "game_number": 2,
+    "timestamp": "2025-12-17T08:07:30.480878+00:00"
+  },
+  {
+    "outcome": "win",
+    "rounds": 2,
+    "converged_word": "stream",
+    "player1_model": "claude-3-haiku-20240307",
+    "player2_model": "claude-3-haiku-20240307",
+    "player1_words": [
+      "wilderness",
+      "stream"
+    ],
+    "player2_words": [
+      "fish",
+      "stream"
+    ],
+    "seed_word1": "river",
+    "seed_word2": "bear",
+    "game_number": 3,
+    "timestamp": "2025-12-17T08:07:32.337964+00:00"
+  }
+]

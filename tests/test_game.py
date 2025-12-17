@@ -40,6 +40,27 @@ class TestGameState:
         state = state.add_round("fruit", "food")
         assert set(state.all_words) == {"apple", "banana", "fruit", "food"}
 
+    def test_seed_words(self) -> None:
+        """GameState should store seed words."""
+        state = GameState(seed_word1="cat", seed_word2="dog")
+        assert state.seed_word1 == "cat"
+        assert state.seed_word2 == "dog"
+
+    def test_seed_words_in_all_words(self) -> None:
+        """Seed words should be included in all_words."""
+        state = GameState(seed_word1="cat", seed_word2="dog")
+        assert "cat" in state.all_words
+        assert "dog" in state.all_words
+
+    def test_seed_words_cannot_be_used(self) -> None:
+        """Seed words should count as already used."""
+        state = GameState(seed_word1="cat", seed_word2="dog")
+        state = state.add_round("pet", "animal")
+        # cat and dog are still in all_words
+        assert "cat" in state.all_words
+        assert "dog" in state.all_words
+        assert "pet" in state.all_words
+
 
 class TestGameResult:
     """Tests for GameResult class."""
@@ -100,6 +121,23 @@ class TestGameResult:
         assert d["player2_model"] == "model2"
         assert "player1_words" in d
         assert "player2_words" in d
+
+    def test_to_dict_with_seed_words(self) -> None:
+        """Result should include seed words in serialization."""
+        state = GameState(seed_word1="cat", seed_word2="dog")
+        state = state.add_round("pet", "pet")
+
+        result = GameResult(
+            outcome=Outcome.WIN,
+            rounds=1,
+            converged_word="pet",
+            state=state,
+            player1_model="model1",
+            player2_model="model2",
+        )
+        d = result.to_dict()
+        assert d["seed_word1"] == "cat"
+        assert d["seed_word2"] == "dog"
 
 
 class TestGame:

@@ -9,12 +9,11 @@ from convergence.runner import run_benchmark, summarize_results
 
 
 async def main() -> None:
-    """Run a test with Claude Haiku."""
-    print("Running 3 test games with Claude Haiku...")
+    """Run a test with Claude Haiku using seed words."""
+    print("Running 3 test games with Claude Haiku (with seed words)...")
     print("=" * 50)
 
     # Use Claude Haiku - cheap and fast
-    # litellm format: anthropic/claude-3-haiku-20240307
     model = "claude-3-haiku-20240307"
 
     results = await run_benchmark(
@@ -24,6 +23,7 @@ async def main() -> None:
         max_rounds=20,
         output_dir=Path("data/results"),
         verbose=True,
+        use_seed_words=True,  # Enable seed words for fair benchmarking
     )
 
     print("\n" + "=" * 50)
