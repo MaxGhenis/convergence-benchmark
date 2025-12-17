@@ -103,6 +103,23 @@ class GameRunner:
         )
 
 
+def generate_seed_pairs(num_pairs: int, seed: int | None = None) -> list[tuple[str, str]]:
+    """Generate a fixed set of seed word pairs for reproducible benchmarking.
+
+    Args:
+        num_pairs: Number of seed word pairs to generate.
+        seed: Random seed for reproducibility.
+
+    Returns:
+        List of (word1, word2) tuples.
+    """
+    import random
+
+    if seed is not None:
+        random.seed(seed)
+    return [get_seed_words() for _ in range(num_pairs)]
+
+
 async def run_benchmark(
     model1: str,
     model2: str,
@@ -110,7 +127,7 @@ async def run_benchmark(
     max_rounds: int = 20,
     output_dir: Path | None = None,
     verbose: bool = False,
-    use_seed_words: bool = True,
+    seed_pairs: list[tuple[str, str]] | None = None,
 ) -> list[dict[str, Any]]:
     """Run a benchmark of multiple games between two models.
 
@@ -121,7 +138,9 @@ async def run_benchmark(
         max_rounds: Maximum rounds per game.
         output_dir: Directory to save results (optional).
         verbose: Whether to print progress.
-        use_seed_words: Whether to assign random seed words (default True).
+        seed_pairs: Pre-generated seed word pairs for reproducibility.
+            If None, generates random pairs. Use generate_seed_pairs()
+            to create the same pairs for all models.
 
     Returns:
         List of game results as dictionaries.
@@ -130,19 +149,20 @@ async def run_benchmark(
     player2 = Player(model=model2)
     runner = GameRunner(player1, player2, max_rounds=max_rounds, verbose=verbose)
 
+    # Use provided pairs or generate new ones
+    if seed_pairs is None:
+        seed_pairs = [get_seed_words() for _ in range(num_games)]
+    elif len(seed_pairs) < num_games:
+        raise ValueError(f"Need {num_games} seed pairs, got {len(seed_pairs)}")
+
     results: list[dict[str, Any]] = []
 
     for i in range(num_games):
-        # Generate seed words for fair benchmarking
-        if use_seed_words:
-            seed_word1, seed_word2 = get_seed_words()
-        else:
-            seed_word1, seed_word2 = None, None
+        seed_word1, seed_word2 = seed_pairs[i]
 
         if verbose:
             print(f"\n=== Game {i + 1}/{num_games} ===")
-            if seed_word1 and seed_word2:
-                print(f"Seed words: '{seed_word1}' vs '{seed_word2}'")
+            print(f"Seed words: '{seed_word1}' vs '{seed_word2}'")
 
         result = await runner.play_game(seed_word1, seed_word2)
         result_dict = result.to_dict()
