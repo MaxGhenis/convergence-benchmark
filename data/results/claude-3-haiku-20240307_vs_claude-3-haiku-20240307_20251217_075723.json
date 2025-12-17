@@ -1,0 +1,57 @@
+[
+  {
+    "outcome": "win",
+    "rounds": 1,
+    "converged_word": "tree",
+    "player1_model": "claude-3-haiku-20240307",
+    "player2_model": "claude-3-haiku-20240307",
+    "player1_words": [
+      "tree"
+    ],
+    "player2_words": [
+      "tree"
+    ],
+    "game_number": 1,
+    "timestamp": "2025-12-17T07:57:17.395286+00:00"
+  },
+  {
+    "outcome": "win",
+    "rounds": 2,
+    "converged_word": "fruit",
+    "player1_model": "claude-3-haiku-20240307",
+    "player2_model": "claude-3-haiku-20240307",
+    "player1_words": [
+      "tree",
+      "fruit"
+    ],
+    "player2_words": [
+      "apple",
+      "fruit"
+    ],
+    "game_number": 2,
+    "timestamp": "2025-12-17T07:57:19.040844+00:00"
+  },
+  {
+    "outcome": "repetition",
+    "rounds": 5,
+    "converged_word": null,
+    "player1_model": "claude-3-haiku-20240307",
+    "player2_model": "claude-3-haiku-20240307",
+    "player1_words": [
+      "apple",
+      "garden",
+      "leaf",
+      "root",
+      "soil"
+    ],
+    "player2_words": [
+      "flower",
+      "tree",
+      "soil",
+      "plant",
+      "growth"
+    ],
+    "game_number": 3,
+    "timestamp": "2025-12-17T07:57:23.145854+00:00"
+  }
+]
