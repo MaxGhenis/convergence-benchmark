@@ -28,6 +28,8 @@ class GameRunner:
     max_rounds: int = 20
     verbose: bool = False
 
+    max_retries_per_round: int = 50  # High limit - models must comply
+
     async def play_game(
         self, seed_word1: str | None = None, seed_word2: str | None = None
     ) -> GameResult:
@@ -41,32 +43,47 @@ class GameRunner:
             GameResult with the outcome and full history.
         """
         state = GameState(seed_word1=seed_word1, seed_word2=seed_word2)
+        total_retries = 0
 
         for round_num in range(self.max_rounds):
-            # Get words from both players concurrently
-            word1_task = self.player1.get_word(state, is_player1=True)
-            word2_task = self.player2.get_word(state, is_player1=False)
+            # Retry loop for rule violations (repeated words)
+            for retry in range(self.max_retries_per_round):
+                # Get words from both players concurrently
+                word1_task = self.player1.get_word(state, is_player1=True)
+                word2_task = self.player2.get_word(state, is_player1=False)
 
-            word1, word2 = await asyncio.gather(word1_task, word2_task)
+                word1, word2 = await asyncio.gather(word1_task, word2_task)
 
-            if self.verbose:
-                print(f"Round {round_num + 1}: '{word1}' vs '{word2}'")
+                # Check for invalid words
+                if word1 is None or word2 is None:
+                    return GameResult(
+                        outcome=Outcome.INVALID_WORD,
+                        rounds=round_num + 1,
+                        converged_word=None,
+                        state=state,
+                        player1_model=self.player1.model,
+                        player2_model=self.player2.model,
+                    )
 
-            # Check for invalid words
-            if word1 is None or word2 is None:
-                return GameResult(
-                    outcome=Outcome.INVALID_WORD,
-                    rounds=round_num + 1,
-                    converged_word=None,
-                    state=state,
-                    player1_model=self.player1.model,
-                    player2_model=self.player2.model,
-                )
+                # Check for repetition - if either word was used before, retry
+                word1_repeated = word1 in state.all_words
+                word2_repeated = word2 in state.all_words
 
-            # Check for repetition
-            if word1 in state.all_words or word2 in state.all_words:
-                # Record the attempt anyway
-                state = state.add_round(word1, word2)
+                if word1_repeated or word2_repeated:
+                    total_retries += 1
+                    if self.verbose:
+                        repeated = []
+                        if word1_repeated:
+                            repeated.append(f"P1:'{word1}'")
+                        if word2_repeated:
+                            repeated.append(f"P2:'{word2}'")
+                        print(f"Round {round_num + 1} retry {retry + 1}: {', '.join(repeated)} repeated, re-running...")
+                    continue  # Retry this round
+
+                # Valid words - break out of retry loop
+                break
+            else:
+                # Exhausted retries - return repetition failure
                 return GameResult(
                     outcome=Outcome.REPETITION,
                     rounds=round_num + 1,
@@ -76,13 +93,16 @@ class GameRunner:
                     player2_model=self.player2.model,
                 )
 
+            if self.verbose:
+                print(f"Round {round_num + 1}: '{word1}' vs '{word2}'")
+
             # Add the round
             state = state.add_round(word1, word2)
 
             # Check for convergence
             if state.is_finished:
                 if self.verbose:
-                    print(f"Converged on '{state.converged_word}'!")
+                    print(f"Converged on '{state.converged_word}'! (total retries: {total_retries})")
                 return GameResult(
                     outcome=Outcome.WIN,
                     rounds=round_num + 1,

@@ -1,0 +1,304 @@
+{
+  "metadata": {
+    "model1": "anthropic/claude-haiku-4-5",
+    "model2": "openai/gpt-4o-mini",
+    "num_triplets": 3,
+    "max_rounds": 50,
+    "seed": 42,
+    "timestamp": "20251217_210232"
+  },
+  "results": [
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "heart",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "heart"
+      ],
+      "player2_words": [
+        "heart"
+      ],
+      "seed_word1": "coat",
+      "seed_word2": "love",
+      "game_number": 1,
+      "timestamp": "2025-12-17T21:00:21.930090+00:00"
+    },
+    {
+      "outcome": "repetition",
+      "rounds": 9,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "bread",
+        "butter",
+        "milk",
+        "vegetable",
+        "cheese",
+        "potato",
+        "tomato",
+        "i"
+      ],
+      "player2_words": [
+        "hat",
+        "shoe",
+        "carrot",
+        "apple",
+        "orange",
+        "banana",
+        "peach",
+        "grape"
+      ],
+      "seed_word1": "coat",
+      "seed_word2": "corn",
+      "game_number": 2,
+      "timestamp": "2025-12-17T21:00:37.264923+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 11,
+      "converged_word": "wind",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "bread",
+        "flower",
+        "sun",
+        "cloud",
+        "ocean",
+        "rain",
+        "garden",
+        "mountain",
+        "grass",
+        "i",
+        "wind"
+      ],
+      "player2_words": [
+        "tree",
+        "water",
+        "sky",
+        "moon",
+        "star",
+        "light",
+        "rock",
+        "fire",
+        "fruit",
+        "leaf",
+        "wind"
+      ],
+      "seed_word1": "love",
+      "seed_word2": "corn",
+      "game_number": 3,
+      "timestamp": "2025-12-17T21:00:52.833937+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 3,
+      "converged_word": "desk",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "i",
+        "furniture",
+        "desk"
+      ],
+      "player2_words": [
+        "shelf",
+        "library",
+        "desk"
+      ],
+      "seed_word1": "balcony",
+      "seed_word2": "bookcase",
+      "game_number": 4,
+      "timestamp": "2025-12-17T21:00:55.973180+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 6,
+      "converged_word": "screw",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "i",
+        "tool",
+        "nail",
+        "pliers",
+        "bolt",
+        "screw"
+      ],
+      "player2_words": [
+        "hammer",
+        "screwdriver",
+        "saw",
+        "drill",
+        "chisel",
+        "screw"
+      ],
+      "seed_word1": "balcony",
+      "seed_word2": "wrench",
+      "game_number": 5,
+      "timestamp": "2025-12-17T21:01:03.226957+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "table",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "table"
+      ],
+      "player2_words": [
+        "table"
+      ],
+      "seed_word1": "bookcase",
+      "seed_word2": "wrench",
+      "game_number": 6,
+      "timestamp": "2025-12-17T21:01:05.014588+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "future",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "future"
+      ],
+      "player2_words": [
+        "future"
+      ],
+      "seed_word1": "angel",
+      "seed_word2": "past",
+      "game_number": 7,
+      "timestamp": "2025-12-17T21:01:06.592889+00:00"
+    },
+    {
+      "outcome": "repetition",
+      "rounds": 29,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "flower",
+        "garden",
+        "sky",
+        "cloud",
+        "rain",
+        "storm",
+        "wind",
+        "water",
+        "snow",
+        "ice",
+        "i",
+        "sunset",
+        "horizon",
+        "meadow",
+        "peace",
+        "serenity",
+        "forest",
+        "thunder",
+        "breeze",
+        "lake",
+        "river",
+        "volcano",
+        "stone",
+        "gravity",
+        "night",
+        "sand",
+        "sun",
+        "dream"
+      ],
+      "player2_words": [
+        "tree",
+        "mountain",
+        "sunshine",
+        "ocean",
+        "rainbow",
+        "star",
+        "moon",
+        "light",
+        "fire",
+        "beach",
+        "heart",
+        "bird",
+        "space",
+        "dance",
+        "firework",
+        "juice",
+        "flame",
+        "rock",
+        "valley",
+        "grass",
+        "fruit",
+        "apple",
+        "harmony",
+        "fruitcake",
+        "festival",
+        "chocolate",
+        "whisper",
+        "stormy"
+      ],
+      "seed_word1": "angel",
+      "seed_word2": "herb",
+      "game_number": 8,
+      "timestamp": "2025-12-17T21:02:04.698479+00:00"
+    },
+    {
+      "outcome": "repetition",
+      "rounds": 15,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "tree",
+        "flower",
+        "garden",
+        "plant",
+        "stem",
+        "petal",
+        "bloom",
+        "thorn",
+        "i",
+        "looking",
+        "water",
+        "forest",
+        "rose",
+        "branch"
+      ],
+      "player2_words": [
+        "spice",
+        "leaf",
+        "bark",
+        "root",
+        "seed",
+        "vine",
+        "fruit",
+        "wood",
+        "grass",
+        "shrub",
+        "bush",
+        "soil",
+        "sun",
+        "moss"
+      ],
+      "seed_word1": "past",
+      "seed_word2": "herb",
+      "game_number": 9,
+      "timestamp": "2025-12-17T21:02:32.416934+00:00"
+    }
+  ],
+  "summary": {
+    "total_games": 9,
+    "wins": 6,
+    "win_rate": 0.6666666666666666,
+    "non_convergence": 0,
+    "repetitions": 3,
+    "invalid_words": 0,
+    "avg_rounds_to_win": 3.8333333333333335,
+    "min_rounds_to_win": 1,
+    "max_rounds_to_win": 11
+  }
+}

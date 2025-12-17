@@ -7,24 +7,6 @@ from litellm import acompletion  # pyright: ignore[reportUnknownVariableType]
 
 from convergence.game import GameState
 
-SYSTEM_PROMPT = """\
-You are playing a word association game called "Convergence" \
-(also known as "Mind Meld").
-
-RULES:
-1. Two players each say a word at the same time
-2. The goal is for both players to say the SAME word
-3. Each round, think of a word that connects BOTH previous words
-4. You cannot repeat any word that has been used before
-
-STRATEGY:
-- Think of concepts that bridge both words
-- Consider common associations, categories, or themes
-- Try to converge on simple, common words
-
-Respond with ONLY a single word. No explanations, no punctuation, just the word."""
-
-
 def extract_word(response: str) -> str | None:
     """Extract a single word from an LLM response.
 
@@ -70,56 +52,38 @@ class Player:
         Returns:
             User prompt string.
         """
-        if state.round == 0:
-            # If seed words are set, use them as the starting point
-            if state.seed_word1 and state.seed_word2:
-                lines = [
-                    "Round 1:",
-                    f"Your starting word: {state.seed_word1}",
-                    f"Opponent's starting word: {state.seed_word2}",
-                    "",
-                    f"Think of a word that connects '{state.seed_word1}' "
-                    f"and '{state.seed_word2}'.",
-                    "",
-                    f"Words you cannot use: {state.seed_word1}, {state.seed_word2}",
-                    "",
-                    "Respond with ONLY a single word.",
-                ]
-                return "\n".join(lines)
-            return "Start the game by saying any word. Respond with ONLY a single word."
-
-        # Get the opponent's last word and our last word
         if is_player1:
-            my_words = state.player1_words
-            opponent_words = state.player2_words
+            my_words = list(state.player1_words)
+            opponent_words = list(state.player2_words)
         else:
-            my_words = state.player2_words
-            opponent_words = state.player1_words
+            my_words = list(state.player2_words)
+            opponent_words = list(state.player1_words)
 
-        my_last = my_words[-1] if my_words else None
-        opponent_last = opponent_words[-1] if opponent_words else None
+        # Add seed words as round 0
+        if state.seed_word1 and state.seed_word2:
+            my_seed = state.seed_word1 if is_player1 else state.seed_word2
+            opp_seed = state.seed_word2 if is_player1 else state.seed_word1
+            my_words = [my_seed] + my_words
+            opponent_words = [opp_seed] + opponent_words
 
-        # Build history section
-        lines = [f"Round {state.round + 1}:"]
+        current_round = len(my_words)
 
-        if my_last and opponent_last:
-            lines.append(f"Your last word: {my_last}")
-            lines.append(f"Opponent's last word: {opponent_last}")
-            lines.append("")
-            lines.append(
-                f"Think of a word that connects '{my_last}' and '{opponent_last}'."
-            )
+        # Build history
+        history_lines = []
+        for i, (my_word, opp_word) in enumerate(zip(my_words, opponent_words)):
+            history_lines.append(f"Round {i + 1}:")
+            history_lines.append(f"You: {my_word}")
+            history_lines.append(f"Other: {opp_word}")
+            history_lines.append("")
 
-        # List forbidden words
-        used_words = sorted(state.all_words)
-        if used_words:
-            lines.append("")
-            lines.append(f"Words you cannot use (already used): {', '.join(used_words)}")
+        history = "\n".join(history_lines)
 
-        lines.append("")
-        lines.append("Respond with ONLY a single word. Do not repeat any used words.")
+        prompt = f"""You're playing Convergence - the goal is to say the same word as the other player. Don't repeat any word from the history.
 
-        return "\n".join(lines)
+{history}
+Reply with a single word, nothing else."""
+
+        return prompt
 
     async def get_word(self, state: GameState, is_player1: bool) -> str | None:
         """Get a word choice from the LLM.
@@ -133,15 +97,17 @@ class Player:
         """
         prompt = self.build_prompt(state, is_player1)
 
-        response = await acompletion(
-            model=self.model,
-            messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": prompt},
-            ],
-            temperature=self.temperature,
-            max_tokens=20,  # Just need a single word
-        )
+        # Build kwargs - GPT-5 models need reasoning_effort to avoid empty responses
+        kwargs: dict[str, object] = {
+            "model": self.model,
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": self.temperature,
+            "max_tokens": 50,
+        }
+        if "gpt-5" in self.model:
+            kwargs["reasoning_effort"] = "minimal"
+
+        response = await acompletion(**kwargs)  # pyright: ignore[reportArgumentType]
 
         content = response.choices[0].message.content  # pyright: ignore[reportUnknownMemberType,reportAttributeAccessIssue,reportUnknownVariableType]
         return extract_word(content) if content else None  # pyright: ignore[reportUnknownArgumentType]

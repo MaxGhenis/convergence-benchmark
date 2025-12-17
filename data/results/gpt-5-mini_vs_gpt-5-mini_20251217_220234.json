@@ -1,0 +1,501 @@
+{
+  "metadata": {
+    "model1": "openai/gpt-5-mini-2025-08-07",
+    "model2": "openai/gpt-5-mini-2025-08-07",
+    "num_triplets": 8,
+    "max_rounds": 50,
+    "seed": 42,
+    "timestamp": "20251217_220234"
+  },
+  "results": [
+    {
+      "outcome": "win",
+      "rounds": 3,
+      "converged_word": "pulse",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "jacket",
+        "cardiac",
+        "pulse"
+      ],
+      "player2_words": [
+        "heart",
+        "cardioid",
+        "pulse"
+      ],
+      "seed_word1": "coat",
+      "seed_word2": "love",
+      "game_number": 1,
+      "timestamp": "2025-12-17T22:01:28.396991+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 4,
+      "converged_word": "malt",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "ear",
+        "hearing",
+        "barley",
+        "malt"
+      ],
+      "player2_words": [
+        "field",
+        "wheat",
+        "grain",
+        "malt"
+      ],
+      "seed_word1": "coat",
+      "seed_word2": "corn",
+      "game_number": 2,
+      "timestamp": "2025-12-17T22:01:32.166716+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 7,
+      "converged_word": "amalgamation",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "sweetheart",
+        "honeycomb",
+        "combination",
+        "synergy",
+        "convergence",
+        "synthesis",
+        "amalgamation"
+      ],
+      "player2_words": [
+        "maize",
+        "kernel",
+        "cellular",
+        "fusion",
+        "integration",
+        "unification",
+        "amalgamation"
+      ],
+      "seed_word1": "love",
+      "seed_word2": "corn",
+      "game_number": 3,
+      "timestamp": "2025-12-17T22:01:40.172767+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "shelf",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "shelf"
+      ],
+      "player2_words": [
+        "shelf"
+      ],
+      "seed_word1": "balcony",
+      "seed_word2": "bookcase",
+      "game_number": 4,
+      "timestamp": "2025-12-17T22:01:41.178035+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "spanner",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "spanner"
+      ],
+      "player2_words": [
+        "spanner"
+      ],
+      "seed_word1": "balcony",
+      "seed_word2": "wrench",
+      "game_number": 5,
+      "timestamp": "2025-12-17T22:01:42.046639+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "shelf",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "shelf"
+      ],
+      "player2_words": [
+        "shelf"
+      ],
+      "seed_word1": "bookcase",
+      "seed_word2": "wrench",
+      "game_number": 6,
+      "timestamp": "2025-12-17T22:01:43.161068+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 3,
+      "converged_word": "nostalgia",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "halo",
+        "aura",
+        "nostalgia"
+      ],
+      "player2_words": [
+        "memory",
+        "reminiscence",
+        "nostalgia"
+      ],
+      "seed_word1": "angel",
+      "seed_word2": "past",
+      "game_number": 7,
+      "timestamp": "2025-12-17T22:01:46.581875+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "rosemary",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "thyme",
+        "rosemary"
+      ],
+      "player2_words": [
+        "sage",
+        "rosemary"
+      ],
+      "seed_word1": "angel",
+      "seed_word2": "herb",
+      "game_number": 8,
+      "timestamp": "2025-12-17T22:01:48.500772+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "sage",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "sage"
+      ],
+      "player2_words": [
+        "sage"
+      ],
+      "seed_word1": "past",
+      "seed_word2": "herb",
+      "game_number": 9,
+      "timestamp": "2025-12-17T22:01:49.550320+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "passage",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "aisle",
+        "passage"
+      ],
+      "player2_words": [
+        "hallway",
+        "passage"
+      ],
+      "seed_word1": "shame",
+      "seed_word2": "corridor",
+      "game_number": 10,
+      "timestamp": "2025-12-17T22:01:52.450713+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 3,
+      "converged_word": "soaking",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "embarrassment",
+        "red-faced",
+        "soaking"
+      ],
+      "player2_words": [
+        "deluge",
+        "drenching",
+        "soaking"
+      ],
+      "seed_word1": "shame",
+      "seed_word2": "flood",
+      "game_number": 11,
+      "timestamp": "2025-12-17T22:01:55.715813+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "duct",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "passage",
+        "duct"
+      ],
+      "player2_words": [
+        "channel",
+        "duct"
+      ],
+      "seed_word1": "corridor",
+      "seed_word2": "flood",
+      "game_number": 12,
+      "timestamp": "2025-12-17T22:01:57.920896+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "anniversary",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "jubilee",
+        "anniversary"
+      ],
+      "player2_words": [
+        "threshold",
+        "anniversary"
+      ],
+      "seed_word1": "joy",
+      "seed_word2": "gate",
+      "game_number": 13,
+      "timestamp": "2025-12-17T22:01:59.881743+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 4,
+      "converged_word": "ribbon",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "sole",
+        "footwear",
+        "loop",
+        "ribbon"
+      ],
+      "player2_words": [
+        "laces",
+        "knot",
+        "bow",
+        "ribbon"
+      ],
+      "seed_word1": "joy",
+      "seed_word2": "shoe",
+      "game_number": 14,
+      "timestamp": "2025-12-17T22:02:05.902019+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "lace",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "lace"
+      ],
+      "player2_words": [
+        "lace"
+      ],
+      "seed_word1": "gate",
+      "seed_word2": "shoe",
+      "game_number": 15,
+      "timestamp": "2025-12-17T22:02:07.045574+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 3,
+      "converged_word": "nursery",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "planter",
+        "container",
+        "nursery"
+      ],
+      "player2_words": [
+        "planterior",
+        "plantation",
+        "nursery"
+      ],
+      "seed_word1": "sketch",
+      "seed_word2": "garden",
+      "game_number": 16,
+      "timestamp": "2025-12-17T22:02:11.234790+00:00"
+    },
+    {
+      "outcome": "invalid_word",
+      "rounds": 4,
+      "converged_word": null,
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "drawn",
+        "inkling",
+        "notion"
+      ],
+      "player2_words": [
+        "drawings",
+        "sketches",
+        "hint"
+      ],
+      "seed_word1": "sketch",
+      "seed_word2": "cards",
+      "game_number": 17,
+      "timestamp": "2025-12-17T22:02:15.402811+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "deck",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "deck"
+      ],
+      "player2_words": [
+        "deck"
+      ],
+      "seed_word1": "garden",
+      "seed_word2": "cards",
+      "game_number": 18,
+      "timestamp": "2025-12-17T22:02:17.316840+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "bridge",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "arch",
+        "bridge"
+      ],
+      "player2_words": [
+        "browpeace",
+        "bridge"
+      ],
+      "seed_word1": "eyebrow",
+      "seed_word2": "peace",
+      "game_number": 19,
+      "timestamp": "2025-12-17T22:02:19.336145+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "ridge",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "browridge",
+        "ridge"
+      ],
+      "player2_words": [
+        "lid",
+        "ridge"
+      ],
+      "seed_word1": "eyebrow",
+      "seed_word2": "eye",
+      "game_number": 20,
+      "timestamp": "2025-12-17T22:02:21.185514+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 4,
+      "converged_word": "clear-headed",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "calm",
+        "serene",
+        "tranquil",
+        "clear-headed"
+      ],
+      "player2_words": [
+        "vision",
+        "clarity",
+        "lucid",
+        "clear-headed"
+      ],
+      "seed_word1": "peace",
+      "seed_word2": "eye",
+      "game_number": 21,
+      "timestamp": "2025-12-17T22:02:25.604675+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "horn",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "horn"
+      ],
+      "player2_words": [
+        "horn"
+      ],
+      "seed_word1": "ruler",
+      "seed_word2": "rhino",
+      "game_number": 22,
+      "timestamp": "2025-12-17T22:02:26.673393+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 4,
+      "converged_word": "sandpiper",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "kingfisher",
+        "birdsong",
+        "flow",
+        "sandpiper"
+      ],
+      "player2_words": [
+        "tide",
+        "ebb",
+        "shorebird",
+        "sandpiper"
+      ],
+      "seed_word1": "ruler",
+      "seed_word2": "ocean",
+      "game_number": 23,
+      "timestamp": "2025-12-17T22:02:31.339517+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "beak",
+      "player1_model": "openai/gpt-5-mini-2025-08-07",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "hornbill",
+        "beak"
+      ],
+      "player2_words": [
+        "hornsea",
+        "beak"
+      ],
+      "seed_word1": "rhino",
+      "seed_word2": "ocean",
+      "game_number": 24,
+      "timestamp": "2025-12-17T22:02:34.276828+00:00"
+    }
+  ],
+  "summary": {
+    "total_games": 24,
+    "wins": 23,
+    "win_rate": 0.9583333333333334,
+    "non_convergence": 0,
+    "repetitions": 0,
+    "invalid_words": 1,
+    "avg_rounds_to_win": 2.4347826086956523,
+    "min_rounds_to_win": 1,
+    "max_rounds_to_win": 7
+  }
+}

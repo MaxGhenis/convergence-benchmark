@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "model1": "anthropic/claude-haiku-4-5",
+    "model2": "openai/gpt-4o-mini",
+    "num_triplets": 3,
+    "max_rounds": 50,
+    "seed": 42,
+    "timestamp": "20251217_211304"
+  },
+  "results": [
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "heart",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "heart"
+      ],
+      "player2_words": [
+        "heart"
+      ],
+      "seed_word1": "coat",
+      "seed_word2": "love",
+      "game_number": 1,
+      "timestamp": "2025-12-17T21:06:02.494476+00:00"
+    },
+    {
+      "outcome": "repetition",
+      "rounds": 14,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "bread",
+        "forest",
+        "orchard",
+        "fruit",
+        "berry",
+        "food",
+        "farm",
+        "harvest",
+        "i",
+        "produce",
+        "garden",
+        "looking",
+        "crop"
+      ],
+      "player2_words": [
+        "tree",
+        "apple",
+        "shoe",
+        "cloud",
+        "dance",
+        "wind",
+        "grass",
+        "orange",
+        "river",
+        "nut",
+        "field",
+        "jungle",
+        "water"
+      ],
+      "seed_word1": "coat",
+      "seed_word2": "corn",
+      "game_number": 2,
+      "timestamp": "2025-12-17T21:08:46.147917+00:00"
+    },
+    {
+      "outcome": "repetition",
+      "rounds": 17,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "bread",
+        "garden",
+        "plant",
+        "grow",
+        "seed",
+        "root",
+        "sprout",
+        "i",
+        "sprouted",
+        "soil",
+        "stalk",
+        "leaf",
+        "straw",
+        "looking",
+        "stem",
+        "yellow"
+      ],
+      "player2_words": [
+        "tree",
+        "ocean",
+        "sky",
+        "cloud",
+        "flower",
+        "fruit",
+        "hill",
+        "wheat",
+        "park",
+        "banana",
+        "moon",
+        "mushroom",
+        "toast",
+        "fire",
+        "sun",
+        "rain"
+      ],
+      "seed_word1": "love",
+      "seed_word2": "corn",
+      "game_number": 3,
+      "timestamp": "2025-12-17T21:11:11.100951+00:00"
+    },
+    {
+      "outcome": "repetition",
+      "rounds": 12,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "furniture",
+        "sofa",
+        "couch",
+        "desk",
+        "stool",
+        "i",
+        "room",
+        "window",
+        "looking",
+        "cushion",
+        "let"
+      ],
+      "player2_words": [
+        "chair",
+        "table",
+        "shelf",
+        "lamp",
+        "bed",
+        "armchair",
+        "drawer",
+        "cabinet",
+        "carpet",
+        "light",
+        "wall"
+      ],
+      "seed_word1": "balcony",
+      "seed_word2": "bookcase",
+      "game_number": 4,
+      "timestamp": "2025-12-17T21:12:49.535970+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 3,
+      "converged_word": "screwdriver",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "garden",
+        "picnic",
+        "screwdriver"
+      ],
+      "player2_words": [
+        "hammer",
+        "tool",
+        "screwdriver"
+      ],
+      "seed_word1": "balcony",
+      "seed_word2": "wrench",
+      "game_number": 5,
+      "timestamp": "2025-12-17T21:12:52.897748+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 5,
+      "converged_word": "table",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "library",
+        "desk",
+        "tools",
+        "furniture",
+        "table"
+      ],
+      "player2_words": [
+        "hammer",
+        "screwdriver",
+        "chair",
+        "lamp",
+        "table"
+      ],
+      "seed_word1": "bookcase",
+      "seed_word2": "wrench",
+      "game_number": 6,
+      "timestamp": "2025-12-17T21:12:58.192840+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "future",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "future"
+      ],
+      "player2_words": [
+        "future"
+      ],
+      "seed_word1": "angel",
+      "seed_word2": "past",
+      "game_number": 7,
+      "timestamp": "2025-12-17T21:12:59.279522+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "flower",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "garden",
+        "flower"
+      ],
+      "player2_words": [
+        "tree",
+        "flower"
+      ],
+      "seed_word1": "angel",
+      "seed_word2": "herb",
+      "game_number": 8,
+      "timestamp": "2025-12-17T21:13:01.307359+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "flower",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "garden",
+        "flower"
+      ],
+      "player2_words": [
+        "plant",
+        "flower"
+      ],
+      "seed_word1": "past",
+      "seed_word2": "herb",
+      "game_number": 9,
+      "timestamp": "2025-12-17T21:13:04.511740+00:00"
+    }
+  ],
+  "summary": {
+    "total_games": 9,
+    "wins": 6,
+    "win_rate": 0.6666666666666666,
+    "non_convergence": 0,
+    "repetitions": 3,
+    "invalid_words": 0,
+    "avg_rounds_to_win": 2.3333333333333335,
+    "min_rounds_to_win": 1,
+    "max_rounds_to_win": 5
+  }
+}

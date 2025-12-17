@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "model1": "anthropic/claude-haiku-4-5",
+    "model2": "openai/gpt-5-mini-2025-08-07",
+    "num_triplets": 3,
+    "max_rounds": 50,
+    "seed": 42,
+    "timestamp": "20251217_215433"
+  },
+  "results": [
+    {
+      "outcome": "invalid_word",
+      "rounds": 1,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [],
+      "player2_words": [],
+      "seed_word1": "coat",
+      "seed_word2": "love",
+      "game_number": 1,
+      "timestamp": "2025-12-17T21:54:23.392853+00:00"
+    },
+    {
+      "outcome": "invalid_word",
+      "rounds": 1,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [],
+      "player2_words": [],
+      "seed_word1": "coat",
+      "seed_word2": "corn",
+      "game_number": 2,
+      "timestamp": "2025-12-17T21:54:24.764812+00:00"
+    },
+    {
+      "outcome": "invalid_word",
+      "rounds": 1,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [],
+      "player2_words": [],
+      "seed_word1": "love",
+      "seed_word2": "corn",
+      "game_number": 3,
+      "timestamp": "2025-12-17T21:54:25.551087+00:00"
+    },
+    {
+      "outcome": "invalid_word",
+      "rounds": 1,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [],
+      "player2_words": [],
+      "seed_word1": "balcony",
+      "seed_word2": "bookcase",
+      "game_number": 4,
+      "timestamp": "2025-12-17T21:54:26.814205+00:00"
+    },
+    {
+      "outcome": "invalid_word",
+      "rounds": 1,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [],
+      "player2_words": [],
+      "seed_word1": "balcony",
+      "seed_word2": "wrench",
+      "game_number": 5,
+      "timestamp": "2025-12-17T21:54:28.256247+00:00"
+    },
+    {
+      "outcome": "invalid_word",
+      "rounds": 1,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [],
+      "player2_words": [],
+      "seed_word1": "bookcase",
+      "seed_word2": "wrench",
+      "game_number": 6,
+      "timestamp": "2025-12-17T21:54:29.793978+00:00"
+    },
+    {
+      "outcome": "invalid_word",
+      "rounds": 1,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [],
+      "player2_words": [],
+      "seed_word1": "angel",
+      "seed_word2": "past",
+      "game_number": 7,
+      "timestamp": "2025-12-17T21:54:31.279432+00:00"
+    },
+    {
+      "outcome": "invalid_word",
+      "rounds": 1,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [],
+      "player2_words": [],
+      "seed_word1": "angel",
+      "seed_word2": "herb",
+      "game_number": 8,
+      "timestamp": "2025-12-17T21:54:32.645681+00:00"
+    },
+    {
+      "outcome": "invalid_word",
+      "rounds": 1,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [],
+      "player2_words": [],
+      "seed_word1": "past",
+      "seed_word2": "herb",
+      "game_number": 9,
+      "timestamp": "2025-12-17T21:54:33.599707+00:00"
+    }
+  ],
+  "summary": {
+    "total_games": 9,
+    "wins": 0,
+    "win_rate": 0.0,
+    "non_convergence": 0,
+    "repetitions": 0,
+    "invalid_words": 9,
+    "avg_rounds_to_win": null,
+    "min_rounds_to_win": null,
+    "max_rounds_to_win": null
+  }
+}

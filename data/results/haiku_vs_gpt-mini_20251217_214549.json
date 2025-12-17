@@ -1,0 +1,196 @@
+{
+  "metadata": {
+    "model1": "anthropic/claude-haiku-4-5",
+    "model2": "openai/gpt-4o-mini",
+    "num_triplets": 3,
+    "max_rounds": 50,
+    "seed": 42,
+    "timestamp": "20251217_214549"
+  },
+  "results": [
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "affection",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "affection"
+      ],
+      "player2_words": [
+        "affection"
+      ],
+      "seed_word1": "coat",
+      "seed_word2": "love",
+      "game_number": 1,
+      "timestamp": "2025-12-17T21:45:25.725432+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 4,
+      "converged_word": "finish",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "butter",
+        "spread",
+        "shellac",
+        "finish"
+      ],
+      "player2_words": [
+        "husk",
+        "shell",
+        "sustain",
+        "finish"
+      ],
+      "seed_word1": "coat",
+      "seed_word2": "corn",
+      "game_number": 2,
+      "timestamp": "2025-12-17T21:45:32.026347+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 5,
+      "converged_word": "groove",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "pop",
+        "culture",
+        "jazz",
+        "syncopation",
+        "groove"
+      ],
+      "player2_words": [
+        "heartland",
+        "music",
+        "rhythm",
+        "swing",
+        "groove"
+      ],
+      "seed_word1": "love",
+      "seed_word2": "corn",
+      "game_number": 3,
+      "timestamp": "2025-12-17T21:45:38.436239+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "shelf",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "shelf"
+      ],
+      "player2_words": [
+        "shelf"
+      ],
+      "seed_word1": "balcony",
+      "seed_word2": "bookcase",
+      "game_number": 4,
+      "timestamp": "2025-12-17T21:45:39.210567+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "support",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "railing",
+        "support"
+      ],
+      "player2_words": [
+        "bracket",
+        "support"
+      ],
+      "seed_word1": "balcony",
+      "seed_word2": "wrench",
+      "game_number": 5,
+      "timestamp": "2025-12-17T21:45:41.390501+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "shelf",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "shelf"
+      ],
+      "player2_words": [
+        "shelf"
+      ],
+      "seed_word1": "bookcase",
+      "seed_word2": "wrench",
+      "game_number": 6,
+      "timestamp": "2025-12-17T21:45:43.219864+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 3,
+      "converged_word": "repository",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "history",
+        "archive",
+        "repository"
+      ],
+      "player2_words": [
+        "memory",
+        "recollection",
+        "repository"
+      ],
+      "seed_word1": "angel",
+      "seed_word2": "past",
+      "game_number": 7,
+      "timestamp": "2025-12-17T21:45:46.797519+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "basil",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "basil"
+      ],
+      "player2_words": [
+        "basil"
+      ],
+      "seed_word1": "angel",
+      "seed_word2": "herb",
+      "game_number": 8,
+      "timestamp": "2025-12-17T21:45:47.866504+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "sage",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-4o-mini",
+      "player1_words": [
+        "sage"
+      ],
+      "player2_words": [
+        "sage"
+      ],
+      "seed_word1": "past",
+      "seed_word2": "herb",
+      "game_number": 9,
+      "timestamp": "2025-12-17T21:45:49.084155+00:00"
+    }
+  ],
+  "summary": {
+    "total_games": 9,
+    "wins": 9,
+    "win_rate": 1.0,
+    "non_convergence": 0,
+    "repetitions": 0,
+    "invalid_words": 0,
+    "avg_rounds_to_win": 2.111111111111111,
+    "min_rounds_to_win": 1,
+    "max_rounds_to_win": 5
+  }
+}

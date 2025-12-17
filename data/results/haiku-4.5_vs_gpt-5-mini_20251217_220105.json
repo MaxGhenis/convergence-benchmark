@@ -1,0 +1,595 @@
+{
+  "metadata": {
+    "model1": "anthropic/claude-haiku-4-5",
+    "model2": "openai/gpt-5-mini-2025-08-07",
+    "num_triplets": 8,
+    "max_rounds": 50,
+    "seed": 42,
+    "timestamp": "20251217_220105"
+  },
+  "results": [
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "affection",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "affection"
+      ],
+      "player2_words": [
+        "affection"
+      ],
+      "seed_word1": "coat",
+      "seed_word2": "love",
+      "game_number": 1,
+      "timestamp": "2025-12-17T21:58:23.315200+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "drum",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "pop",
+        "drum"
+      ],
+      "player2_words": [
+        "ear",
+        "drum"
+      ],
+      "seed_word1": "coat",
+      "seed_word2": "corn",
+      "game_number": 2,
+      "timestamp": "2025-12-17T21:58:25.766819+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 8,
+      "converged_word": "pollen",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "pop",
+        "popcorn",
+        "butter",
+        "churn",
+        "chop",
+        "block",
+        "sunflower",
+        "pollen"
+      ],
+      "player2_words": [
+        "maize",
+        "kernel",
+        "hull",
+        "patty",
+        "buttercup",
+        "flower",
+        "stamen",
+        "pollen"
+      ],
+      "seed_word1": "love",
+      "seed_word2": "corn",
+      "game_number": 3,
+      "timestamp": "2025-12-17T21:58:35.920491+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "shelf",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "shelf"
+      ],
+      "player2_words": [
+        "shelf"
+      ],
+      "seed_word1": "balcony",
+      "seed_word2": "bookcase",
+      "game_number": 4,
+      "timestamp": "2025-12-17T21:58:36.900654+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "rail",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "rail"
+      ],
+      "player2_words": [
+        "rail"
+      ],
+      "seed_word1": "balcony",
+      "seed_word2": "wrench",
+      "game_number": 5,
+      "timestamp": "2025-12-17T21:58:38.127087+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "shelf",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "shelf"
+      ],
+      "player2_words": [
+        "shelf"
+      ],
+      "seed_word1": "bookcase",
+      "seed_word2": "wrench",
+      "game_number": 6,
+      "timestamp": "2025-12-17T21:58:40.211406+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 6,
+      "converged_word": "hoard",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "history",
+        "archive",
+        "reminiscence",
+        "museum",
+        "treasure",
+        "hoard"
+      ],
+      "player2_words": [
+        "memory",
+        "recollection",
+        "repository",
+        "vault",
+        "collection",
+        "hoard"
+      ],
+      "seed_word1": "angel",
+      "seed_word2": "past",
+      "game_number": 7,
+      "timestamp": "2025-12-17T21:58:46.820829+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "reptile",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "basil",
+        "reptile"
+      ],
+      "player2_words": [
+        "basilisk",
+        "reptile"
+      ],
+      "seed_word1": "angel",
+      "seed_word2": "herb",
+      "game_number": 8,
+      "timestamp": "2025-12-17T21:58:48.695351+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "green",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "sage",
+        "green"
+      ],
+      "player2_words": [
+        "mint",
+        "green"
+      ],
+      "seed_word1": "past",
+      "seed_word2": "herb",
+      "game_number": 9,
+      "timestamp": "2025-12-17T21:58:51.138923+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "hallway",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "hallway"
+      ],
+      "player2_words": [
+        "hallway"
+      ],
+      "seed_word1": "shame",
+      "seed_word2": "corridor",
+      "game_number": 10,
+      "timestamp": "2025-12-17T21:58:52.010954+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 11,
+      "converged_word": "fen",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "inundate",
+        "overwhelm",
+        "engulf",
+        "immerse",
+        "bog",
+        "mire",
+        "mud",
+        "quicksand",
+        "muck",
+        "sludge",
+        "fen"
+      ],
+      "player2_words": [
+        "deluge",
+        "submerge",
+        "drown",
+        "swamp",
+        "bogging",
+        "quagmire",
+        "morass",
+        "squelch",
+        "boggy",
+        "marsh",
+        "fen"
+      ],
+      "seed_word1": "shame",
+      "seed_word2": "flood",
+      "game_number": 11,
+      "timestamp": "2025-12-17T21:59:08.689450+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "passage",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "passage"
+      ],
+      "player2_words": [
+        "passage"
+      ],
+      "seed_word1": "corridor",
+      "seed_word2": "flood",
+      "game_number": 12,
+      "timestamp": "2025-12-17T21:59:10.026203+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 11,
+      "converged_word": "zenith",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "golden",
+        "dawn",
+        "proportion",
+        "light",
+        "aurora",
+        "climb",
+        "luminescence",
+        "peak",
+        "pinnacle",
+        "apex",
+        "zenith"
+      ],
+      "player2_words": [
+        "threshold",
+        "ratio",
+        "morning",
+        "rise",
+        "ascend",
+        "radiance",
+        "summit",
+        "apexillum",
+        "crest",
+        "acme",
+        "zenith"
+      ],
+      "seed_word1": "joy",
+      "seed_word2": "gate",
+      "game_number": 13,
+      "timestamp": "2025-12-17T21:59:30.511042+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "sole",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "sole"
+      ],
+      "player2_words": [
+        "sole"
+      ],
+      "seed_word1": "joy",
+      "seed_word2": "shoe",
+      "game_number": 14,
+      "timestamp": "2025-12-17T21:59:31.927906+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "knot",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "latch",
+        "knot"
+      ],
+      "player2_words": [
+        "lace",
+        "knot"
+      ],
+      "seed_word1": "gate",
+      "seed_word2": "shoe",
+      "game_number": 15,
+      "timestamp": "2025-12-17T21:59:34.505652+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 8,
+      "converged_word": "humidity",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "plot",
+        "soil",
+        "earth",
+        "petrichor",
+        "rain",
+        "aroma",
+        "moisture",
+        "humidity"
+      ],
+      "player2_words": [
+        "planter",
+        "gardenia",
+        "fragrance",
+        "scented",
+        "afterrain",
+        "wetness",
+        "dampness",
+        "humidity"
+      ],
+      "seed_word1": "sketch",
+      "seed_word2": "garden",
+      "game_number": 16,
+      "timestamp": "2025-12-17T21:59:45.783027+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 12,
+      "converged_word": "splatter",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "draw",
+        "straw",
+        "mix",
+        "blend",
+        "composite",
+        "mosaic",
+        "pieces",
+        "tiles",
+        "cube",
+        "dice",
+        "joint",
+        "splatter"
+      ],
+      "player2_words": [
+        "deck",
+        "shuffle",
+        "paper",
+        "collage",
+        "montage",
+        "assembly",
+        "tessellation",
+        "tesserae",
+        "mosaicist",
+        "grout",
+        "spatter",
+        "splatter"
+      ],
+      "seed_word1": "sketch",
+      "seed_word2": "cards",
+      "game_number": 17,
+      "timestamp": "2025-12-17T22:00:10.503610+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 10,
+      "converged_word": "pride",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "suit",
+        "chairs",
+        "seats",
+        "theater",
+        "pit",
+        "arena",
+        "theatre",
+        "mask",
+        "flaw",
+        "pride"
+      ],
+      "player2_words": [
+        "deck",
+        "shuffle",
+        "musical",
+        "orchestra",
+        "stage",
+        "drama",
+        "tragedy",
+        "hamartia",
+        "hubris",
+        "pride"
+      ],
+      "seed_word1": "garden",
+      "seed_word2": "cards",
+      "game_number": 18,
+      "timestamp": "2025-12-17T22:00:27.287997+00:00"
+    },
+    {
+      "outcome": "invalid_word",
+      "rounds": 3,
+      "converged_word": null,
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "olive",
+        "branch"
+      ],
+      "player2_words": [
+        "arch",
+        "grove"
+      ],
+      "seed_word1": "eyebrow",
+      "seed_word2": "peace",
+      "game_number": 19,
+      "timestamp": "2025-12-17T22:00:31.994620+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 11,
+      "converged_word": "lips",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "brow",
+        "sight",
+        "look",
+        "gaze",
+        "stare",
+        "gawk",
+        "gape",
+        "lecherous",
+        "mouth",
+        "hunger",
+        "lips"
+      ],
+      "player2_words": [
+        "vision",
+        "glance",
+        "peek",
+        "peer",
+        "ogle",
+        "leer",
+        "leerish",
+        "yawn",
+        "lustful",
+        "kissable",
+        "lips"
+      ],
+      "seed_word1": "eyebrow",
+      "seed_word2": "eye",
+      "game_number": 20,
+      "timestamp": "2025-12-17T22:00:47.389357+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 5,
+      "converged_word": "award",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "pupil",
+        "iris",
+        "dilation",
+        "fellowship",
+        "award"
+      ],
+      "player2_words": [
+        "vision",
+        "student",
+        "scholarship",
+        "grant",
+        "award"
+      ],
+      "seed_word1": "peace",
+      "seed_word2": "eye",
+      "game_number": 21,
+      "timestamp": "2025-12-17T22:00:55.515355+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "horn",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "horn"
+      ],
+      "player2_words": [
+        "horn"
+      ],
+      "seed_word1": "ruler",
+      "seed_word2": "rhino",
+      "game_number": 22,
+      "timestamp": "2025-12-17T22:00:56.555060+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 4,
+      "converged_word": "fly",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "tide",
+        "fisher",
+        "trout",
+        "fly"
+      ],
+      "player2_words": [
+        "kingfisher",
+        "river",
+        "streamer",
+        "fly"
+      ],
+      "seed_word1": "ruler",
+      "seed_word2": "ocean",
+      "game_number": 23,
+      "timestamp": "2025-12-17T22:01:02.069616+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "beak",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "openai/gpt-5-mini-2025-08-07",
+      "player1_words": [
+        "horn",
+        "beak"
+      ],
+      "player2_words": [
+        "hornbill",
+        "beak"
+      ],
+      "seed_word1": "rhino",
+      "seed_word2": "ocean",
+      "game_number": 24,
+      "timestamp": "2025-12-17T22:01:05.508846+00:00"
+    }
+  ],
+  "summary": {
+    "total_games": 24,
+    "wins": 23,
+    "win_rate": 0.9583333333333334,
+    "non_convergence": 0,
+    "repetitions": 0,
+    "invalid_words": 1,
+    "avg_rounds_to_win": 4.521739130434782,
+    "min_rounds_to_win": 1,
+    "max_rounds_to_win": 12
+  }
+}

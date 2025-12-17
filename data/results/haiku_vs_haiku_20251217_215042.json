@@ -1,0 +1,485 @@
+{
+  "metadata": {
+    "model1": "anthropic/claude-haiku-4-5",
+    "model2": "anthropic/claude-haiku-4-5",
+    "num_triplets": 8,
+    "max_rounds": 50,
+    "seed": 42,
+    "timestamp": "20251217_215042"
+  },
+  "results": [
+    {
+      "outcome": "win",
+      "rounds": 3,
+      "converged_word": "sweater",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "jacket",
+        "wool",
+        "sweater"
+      ],
+      "player2_words": [
+        "overcoat",
+        "garment",
+        "sweater"
+      ],
+      "seed_word1": "coat",
+      "seed_word2": "love",
+      "game_number": 1,
+      "timestamp": "2025-12-17T21:49:28.232054+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "shell",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "butter",
+        "shell"
+      ],
+      "player2_words": [
+        "husk",
+        "shell"
+      ],
+      "seed_word1": "coat",
+      "seed_word2": "corn",
+      "game_number": 2,
+      "timestamp": "2025-12-17T21:49:31.480782+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "arrow",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "pop",
+        "arrow"
+      ],
+      "player2_words": [
+        "cupid",
+        "arrow"
+      ],
+      "seed_word1": "love",
+      "seed_word2": "corn",
+      "game_number": 3,
+      "timestamp": "2025-12-17T21:49:34.829892+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "shelf",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "shelf"
+      ],
+      "player2_words": [
+        "shelf"
+      ],
+      "seed_word1": "balcony",
+      "seed_word2": "bookcase",
+      "game_number": 4,
+      "timestamp": "2025-12-17T21:49:36.646617+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "guard",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "rail",
+        "guard"
+      ],
+      "player2_words": [
+        "railing",
+        "guard"
+      ],
+      "seed_word1": "balcony",
+      "seed_word2": "wrench",
+      "game_number": 5,
+      "timestamp": "2025-12-17T21:49:39.326984+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "shelf",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "shelf"
+      ],
+      "player2_words": [
+        "shelf"
+      ],
+      "seed_word1": "bookcase",
+      "seed_word2": "wrench",
+      "game_number": 6,
+      "timestamp": "2025-12-17T21:49:40.570124+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "history",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "history"
+      ],
+      "player2_words": [
+        "history"
+      ],
+      "seed_word1": "angel",
+      "seed_word2": "past",
+      "game_number": 7,
+      "timestamp": "2025-12-17T21:49:41.656039+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 3,
+      "converged_word": "leaf",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "basil",
+        "cilantro",
+        "leaf"
+      ],
+      "player2_words": [
+        "parsley",
+        "mint",
+        "leaf"
+      ],
+      "seed_word1": "angel",
+      "seed_word2": "herb",
+      "game_number": 8,
+      "timestamp": "2025-12-17T21:49:48.118103+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "chronicle",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "sage",
+        "chronicle"
+      ],
+      "player2_words": [
+        "history",
+        "chronicle"
+      ],
+      "seed_word1": "past",
+      "seed_word2": "herb",
+      "game_number": 9,
+      "timestamp": "2025-12-17T21:49:50.975490+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "hallway",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "hallway"
+      ],
+      "player2_words": [
+        "hallway"
+      ],
+      "seed_word1": "shame",
+      "seed_word2": "corridor",
+      "game_number": 10,
+      "timestamp": "2025-12-17T21:49:52.267488+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "inundate",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "inundate"
+      ],
+      "player2_words": [
+        "inundate"
+      ],
+      "seed_word1": "shame",
+      "seed_word2": "flood",
+      "game_number": 11,
+      "timestamp": "2025-12-17T21:49:53.548272+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "passage",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "passage"
+      ],
+      "player2_words": [
+        "passage"
+      ],
+      "seed_word1": "corridor",
+      "seed_word2": "flood",
+      "game_number": 12,
+      "timestamp": "2025-12-17T21:49:54.365445+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "golden",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "golden"
+      ],
+      "player2_words": [
+        "golden"
+      ],
+      "seed_word1": "joy",
+      "seed_word2": "gate",
+      "game_number": 13,
+      "timestamp": "2025-12-17T21:49:56.120624+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 3,
+      "converged_word": "jump",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "skip",
+        "rope",
+        "jump"
+      ],
+      "player2_words": [
+        "sole",
+        "hop",
+        "jump"
+      ],
+      "seed_word1": "joy",
+      "seed_word2": "shoe",
+      "game_number": 14,
+      "timestamp": "2025-12-17T21:50:01.595210+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "lock",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "latch",
+        "lock"
+      ],
+      "player2_words": [
+        "watergate",
+        "lock"
+      ],
+      "seed_word1": "gate",
+      "seed_word2": "shoe",
+      "game_number": 15,
+      "timestamp": "2025-12-17T21:50:05.927437+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "plot",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "plot"
+      ],
+      "player2_words": [
+        "plot"
+      ],
+      "seed_word1": "sketch",
+      "seed_word2": "garden",
+      "game_number": 16,
+      "timestamp": "2025-12-17T21:50:07.407461+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "draw",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "draw"
+      ],
+      "player2_words": [
+        "draw"
+      ],
+      "seed_word1": "sketch",
+      "seed_word2": "cards",
+      "game_number": 17,
+      "timestamp": "2025-12-17T21:50:08.572856+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 4,
+      "converged_word": "bouquets",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "deck",
+        "flowers",
+        "arrangements",
+        "bouquets"
+      ],
+      "player2_words": [
+        "beds",
+        "bunks",
+        "blooms",
+        "bouquets"
+      ],
+      "seed_word1": "garden",
+      "seed_word2": "cards",
+      "game_number": 18,
+      "timestamp": "2025-12-17T21:50:14.463973+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "arch",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "arch"
+      ],
+      "player2_words": [
+        "arch"
+      ],
+      "seed_word1": "eyebrow",
+      "seed_word2": "peace",
+      "game_number": 19,
+      "timestamp": "2025-12-17T21:50:16.619129+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 2,
+      "converged_word": "furrow",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "brow",
+        "furrow"
+      ],
+      "player2_words": [
+        "arch",
+        "furrow"
+      ],
+      "seed_word1": "eyebrow",
+      "seed_word2": "eye",
+      "game_number": 20,
+      "timestamp": "2025-12-17T21:50:19.817726+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 7,
+      "converged_word": "stretch",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "pupil",
+        "iris",
+        "expand",
+        "open",
+        "mouth",
+        "gape",
+        "stretch"
+      ],
+      "player2_words": [
+        "dove",
+        "dilate",
+        "aperture",
+        "opening",
+        "gap",
+        "yawn",
+        "stretch"
+      ],
+      "seed_word1": "peace",
+      "seed_word2": "eye",
+      "game_number": 21,
+      "timestamp": "2025-12-17T21:50:30.399054+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 7,
+      "converged_word": "bow",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "rhinoceros",
+        "tusk",
+        "elephant",
+        "brass",
+        "chest",
+        "violin",
+        "bow"
+      ],
+      "player2_words": [
+        "horn",
+        "nose",
+        "trumpet",
+        "trunk",
+        "instrument",
+        "strings",
+        "bow"
+      ],
+      "seed_word1": "ruler",
+      "seed_word2": "rhino",
+      "game_number": 22,
+      "timestamp": "2025-12-17T21:50:40.428567+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "tide",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "tide"
+      ],
+      "player2_words": [
+        "tide"
+      ],
+      "seed_word1": "ruler",
+      "seed_word2": "ocean",
+      "game_number": 23,
+      "timestamp": "2025-12-17T21:50:41.549773+00:00"
+    },
+    {
+      "outcome": "win",
+      "rounds": 1,
+      "converged_word": "horn",
+      "player1_model": "anthropic/claude-haiku-4-5",
+      "player2_model": "anthropic/claude-haiku-4-5",
+      "player1_words": [
+        "horn"
+      ],
+      "player2_words": [
+        "horn"
+      ],
+      "seed_word1": "rhino",
+      "seed_word2": "ocean",
+      "game_number": 24,
+      "timestamp": "2025-12-17T21:50:42.834486+00:00"
+    }
+  ],
+  "summary": {
+    "total_games": 24,
+    "wins": 24,
+    "win_rate": 1.0,
+    "non_convergence": 0,
+    "repetitions": 0,
+    "invalid_words": 0,
+    "avg_rounds_to_win": 2.125,
+    "min_rounds_to_win": 1,
+    "max_rounds_to_win": 7
+  }
+}
