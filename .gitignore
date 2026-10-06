@@ -28,3 +28,7 @@ htmlcov/
 # Local development
 .env
 .env.local
+
+# Local benchmark reruns
+results/**/rerun_*/
+data/results/**/rerun_*/

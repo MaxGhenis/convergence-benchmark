@@ -12,6 +12,11 @@ from convergence.player import Player
 from convergence.wordlist import get_seed_words
 
 
+class ConvergenceError(Exception):
+    """Raised when a game fails to converge - prompt needs fixing."""
+    pass
+
+
 @dataclass
 class GameRunner:
     """Runs Convergence games between two LLM players.
@@ -54,15 +59,13 @@ class GameRunner:
 
                 word1, word2 = await asyncio.gather(word1_task, word2_task)
 
-                # Check for invalid words
+                # Check for invalid words - this should never happen
                 if word1 is None or word2 is None:
-                    return GameResult(
-                        outcome=Outcome.INVALID_WORD,
-                        rounds=round_num + 1,
-                        converged_word=None,
-                        state=state,
-                        player1_model=self.player1.model,
-                        player2_model=self.player2.model,
+                    raise ConvergenceError(
+                        f"Model returned None! Round {round_num + 1}, "
+                        f"P1: {word1}, P2: {word2}. "
+                        f"History: {list(state.all_words)}. "
+                        f"Fix the prompt!"
                     )
 
                 # Check for repetition - if either word was used before, retry
@@ -83,14 +86,12 @@ class GameRunner:
                 # Valid words - break out of retry loop
                 break
             else:
-                # Exhausted retries - return repetition failure
-                return GameResult(
-                    outcome=Outcome.REPETITION,
-                    rounds=round_num + 1,
-                    converged_word=None,
-                    state=state,
-                    player1_model=self.player1.model,
-                    player2_model=self.player2.model,
+                # Exhausted retries - model keeps repeating words
+                raise ConvergenceError(
+                    f"Model stuck repeating words after {self.max_retries_per_round} retries! "
+                    f"Round {round_num + 1}, last words: P1='{word1}', P2='{word2}'. "
+                    f"History: {list(state.all_words)}. "
+                    f"Fix the prompt!"
                 )
 
             if self.verbose:
@@ -113,13 +114,10 @@ class GameRunner:
                 )
 
         # Reached max rounds without convergence
-        return GameResult(
-            outcome=Outcome.NON_CONVERGENCE,
-            rounds=self.max_rounds,
-            converged_word=None,
-            state=state,
-            player1_model=self.player1.model,
-            player2_model=self.player2.model,
+        raise ConvergenceError(
+            f"Failed to converge after {self.max_rounds} rounds! "
+            f"History: {list(state.all_words)}. "
+            f"Fix the prompt or increase max_rounds!"
         )
 
 

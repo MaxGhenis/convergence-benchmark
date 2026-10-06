@@ -17,6 +17,7 @@ DEFAULT_MODELS = {
     "sonnet-4.5": "anthropic/claude-sonnet-4-5",
     "opus-4.5": "anthropic/claude-opus-4-5",
     # OpenAI GPT-5
+    "gpt-5": "openai/gpt-5",
     "gpt-5-mini": "openai/gpt-5-mini-2025-08-07",
     "gpt-5.2-instant": "openai/gpt-5.2-instant",
     "gpt-5.2-thinking": "openai/gpt-5.2-thinking",

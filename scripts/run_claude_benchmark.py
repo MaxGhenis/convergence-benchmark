@@ -6,7 +6,8 @@ import json
 from datetime import UTC, datetime
 from pathlib import Path
 
-from convergence.runner import generate_seed_pairs, run_benchmark, summarize_results
+from convergence.runner import run_benchmark, summarize_results
+from convergence.wordlist import generate_factorial_pairs
 
 # Claude 4.5 models
 MODELS = [
@@ -16,8 +17,8 @@ MODELS = [
 ]
 
 # Benchmark parameters
-NUM_GAMES = 10  # Per model pair
-MAX_ROUNDS = 20
+NUM_TRIPLETS = 4  # 4 triplets = 12 pairs (factorial design)
+MAX_ROUNDS = 50  # Increased to ensure convergence (retries on repeated words)
 RANDOM_SEED = 42  # For reproducibility
 
 
@@ -26,10 +27,19 @@ async def main() -> None:
     output_dir = Path("data/results/claude_4_5_suite")
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # Generate fixed seed pairs - SAME pairs used for ALL model combinations
-    seed_pairs = generate_seed_pairs(NUM_GAMES, seed=RANDOM_SEED)
+    # Generate factorial pairs - weighted by word frequency from diverse word list
+    # Each triplet (A, B, C) produces 3 pairs: (A,B), (A,C), (B,C)
+    # This enables analysis of word-specific effects
+    seed_pairs = generate_factorial_pairs(
+        num_triplets=NUM_TRIPLETS,
+        seed=RANDOM_SEED,
+        use_dictionary=True,  # Use diverse ~1000 word list
+        weighted=True,  # Weight by word frequency
+    )
 
-    print(f"Generated {len(seed_pairs)} seed pairs with seed={RANDOM_SEED}")
+    print(f"Generated {len(seed_pairs)} seed pairs using factorial design")
+    print(f"  - {NUM_TRIPLETS} triplets × 3 pairs each = {len(seed_pairs)} pairs")
+    print("  - Words weighted by frequency (common words more likely)")
     print("Same pairs used for all 6 model combinations!")
     print(f"Pairs: {seed_pairs}")
     print(f"Models: {MODELS}")
@@ -52,10 +62,11 @@ async def main() -> None:
         benchmark_type = "same_model" if is_same else "cross_model"
         print(f"\n--- {model1} vs {model2} ---")
 
+        num_games = len(seed_pairs)
         results = await run_benchmark(
             model1=model1,
             model2=model2,
-            num_games=NUM_GAMES,
+            num_games=num_games,
             max_rounds=MAX_ROUNDS,
             seed_pairs=seed_pairs,  # Same pairs for all!
             verbose=True,
@@ -76,10 +87,14 @@ async def main() -> None:
             {
                 "metadata": {
                     "models": MODELS,
-                    "num_games_per_pair": NUM_GAMES,
+                    "num_triplets": NUM_TRIPLETS,
+                    "num_pairs_per_model_combo": len(seed_pairs),
                     "max_rounds": MAX_ROUNDS,
                     "random_seed": RANDOM_SEED,
                     "timestamp": timestamp,
+                    "design": "factorial",
+                    "word_source": "diverse_words",
+                    "weighted_sampling": True,
                 },
                 "results": all_results,
                 "summary": {

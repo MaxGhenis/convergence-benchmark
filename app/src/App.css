@@ -339,6 +339,65 @@
   border-top: 1px solid #f1f5f9;
 }
 
+/* Game Selector */
+.game-selector {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.game-selector select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.nav-buttons button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.nav-buttons button:hover:not(:disabled) {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.nav-buttons button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.nav-buttons span {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.model-pair-label {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* Footer */
 footer {
   text-align: center;
